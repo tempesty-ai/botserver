@@ -1,0 +1,13 @@
+# 핵심
+flask>=3.0.0
+openai>=1.0.0
+requests>=2.31.0
+flasgger>=0.9.7
+python-dotenv>=1.0.0
+
+# DB 유틸 (insert.py)
+psycopg2-binary>=2.9.0
+
+# 3단계 커넥터 (Google Docs 사용 시만 필요)
+# google-auth>=2.0.0
+# google-api-python-client>=2.0.0
