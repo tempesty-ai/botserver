@@ -59,6 +59,22 @@ Mattermost user
   -> response_url final POST
 ```
 
+## Architecture Phases
+
+The diagrams below summarize the integration path from the initial Mattermost slash command flow to the expanded connector-based assistant flow.
+
+### Phase 1 - Mattermost Integration
+
+![Mattermost, API server, and Assistant API message flow](img/phase1_mm_flow.png)
+
+### Phase 2 - Assistant Logic
+
+![Assistant API instruction, function calling, and vector store refinement](img/phase2_internal_logic.png)
+
+### Phase 3 - Connector Expansion
+
+![Local and external connector flow into the assistant response pipeline](img/phase3_connector_flow.png)
+
 ## Quick Start
 
 ```bash
