@@ -257,8 +257,8 @@ def create_thread():
         return jsonify({"error": str(e)}), 500
 
 
-@app.route("/intermax", methods=["POST"])
-def intermax():
+@app.route("/sample-bot", methods=["POST"])
+def sample_bot():
     """
     Mattermost 슬래시 커맨드를 처리합니다.
     ---
@@ -282,7 +282,7 @@ def intermax():
     if not user_input:
         return jsonify({
             "response_type": "ephemeral",
-            "text": "질문을 입력해주세요.\n예) `/intermax 장애 원인이 뭔가요?`",
+            "text": "질문을 입력해주세요.\n예) `/sample-bot 장애 원인이 뭔가요?`",
         })
 
     # 대화 초기화 명령어

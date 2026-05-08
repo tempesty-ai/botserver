@@ -30,3 +30,8 @@ Thumbs.db
 # 로그
 *.log
 logs/
+
+.env.*
+!.env.example
+botserver.log
+*.pyc
